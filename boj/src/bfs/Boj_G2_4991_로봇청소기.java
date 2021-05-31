@@ -3,6 +3,8 @@ package bfs;
 import java.io.*;
 import java.util.*;
 
+// 아직 다 안품
+
 public class Boj_G2_4991_로봇청소기 {
 	static char[][] map;
 	static int[][] dist;
