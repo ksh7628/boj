@@ -40,6 +40,7 @@ public class Boj_G2_21609_상어중학교 {
 
 		startAutoPlay();
 		System.out.println(res);
+		br.close();
 	}
 
 	/* 더 이상 블록 그룹을 짓지 못할때까지 오토 플레이 작동 */
