@@ -2,14 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /**
- * <pre>
- *  
- * Boj_G2_21609_상어중학교.java
- * </pre>
- *
  * @author	: KimSeonhong
  * @date	: 2021. 6. 6.
- * @version	: 0.1
  *
  * 분류: 구현, 그래프 이론, 그래프 탐색, 너비 우선 탐색, 깊이 우선 탐색, 시뮬레이션
  * 난이도: 골드2
