@@ -1,4 +1,4 @@
-package number_theory;
+
 
 import java.util.Scanner;
 
