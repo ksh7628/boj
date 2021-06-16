@@ -17,6 +17,7 @@ import java.util.*;
  * 처음으로 푼 플래티넘4 문제여서 느낌이 새로운데 최초 입력 때 합칠 수 있는 문명들을 처리를 안해주어서 좀 헤매게 되었다.
  * 하지만 성능이 썩 좋지 못해서 나중에 다른 사람들의 코드를 참조해서 리팩토링 한 후에 비슷한 문제인 https://www.acmicpc.net/problem/3197 문제를 시도해 봐야겠다.
  * 여담으로 bfs에 union-find 를 접목한 새로운 유형의 문제였는데 풀이법을 알게 되어 좋았다.
+ * 1차 리팩토링: union 연산을 할 때 편향 트리가 될 수 있으므로 rank배열을 통해 정리를 해주었더니 350ms 가량 줄었다.
  */
 public class Boj_P4_14868_문명 {
 	static ArrayDeque<int[]> q = new ArrayDeque<>();
