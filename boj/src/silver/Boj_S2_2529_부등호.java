@@ -69,7 +69,8 @@ public class Boj_S2_2529_부등호 {
 		for (int i = 0; i < 10; i++) {
 			if (!isUsed[i]) {
 				char c = op[cnt];
-
+				
+				// 부등호식을 만족하는 경우에만 계속 탐색
 				switch (c) {
 				case '>':
 					if (res.charAt(res.length() - 1) - '0' > i) {
