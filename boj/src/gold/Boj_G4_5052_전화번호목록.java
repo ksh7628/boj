@@ -14,7 +14,7 @@ import java.util.*;
  * 풀이: String 클래스의 startsWith 메소드를 이용하여 풀었다. 문자열 배열을 정렬을 해줄 경우 단일 for문으로 바로 앞 문자열이 접두어가 되는지만 체크하면 된다.
  * 느낀 점: 생각보다 자바에 문자열 메소드가 많다는 것을 알게 해준 문제였다. 트라이가 분류로 되어 있어서 다음번에는 트라이로 풀어봐야겠다.
  */
-public class Main_G4_5052_전화번호목록 {
+public class Boj_G4_5052_전화번호목록 {
 	static String[] phoneNum;
 	static int N;
 
