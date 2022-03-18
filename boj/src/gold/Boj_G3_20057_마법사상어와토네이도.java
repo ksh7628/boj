@@ -76,14 +76,13 @@ public class Boj_G3_20057_마법사상어와토네이도 {
 	// 배열 범위 벗어나는 모래만큼 res에 누적
 	// a(sx,sy의 9번 인덱스): y에 있는 모래 양 - 퍼센트 합 양 => 소수점 버린다
 	private static void setTornado(int x, int y, int td) {
-		int sum = 0, amount = map[x][y];
+		int amount = map[x][y];
 
 		for (int d = 0; d < 9; d++) {
 			int nx = x + sx[td][d];
 			int ny = y + sy[td][d];
 			int req = amount * per[d / 2] / 100;
 			
-			sum += req;
 			map[x][y] -= req;
 			// 범위 밖으로 나감
 			if (!isCheck(nx, ny)) {
@@ -96,14 +95,13 @@ public class Boj_G3_20057_마법사상어와토네이도 {
 
 		// a 자리에 남은 모래를 저장
 		int ax = x + sx[td][9], ay = y + sy[td][9];
-		int remain = amount - sum;
-		map[x][y] -= remain;
-
 		if (!isCheck(ax, ay)) {
-			res += remain;
+			res += map[x][y];
 		} else {
-			map[ax][ay] += remain;
+			map[ax][ay] += map[x][y];
 		}
+		// 모든 모래가 퍼짐
+		map[x][y] = 0;
 	}
 
 	/* 배열 범위 체크 */
