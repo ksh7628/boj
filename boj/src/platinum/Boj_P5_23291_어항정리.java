@@ -148,7 +148,7 @@ public class Boj_P5_23291_어항정리 {
 		}
 	}
 
-	/* 물고기가 있는 모든 인전합 어항에 대해 동시에 수 조절 */
+	/* 물고기가 있는 모든 인접한 어항에 대해 동시에 수 조절 */
 	private static void controlCount() {
 		int[][] tmap = new int[N - row][N - col];
 		boolean[][] visit = new boolean[N - row][N - col];
