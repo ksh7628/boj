@@ -22,5 +22,6 @@ public class Boj_B4_25304_영수증 {
 		}
 
 		br.close();
+		
 	}
 }
